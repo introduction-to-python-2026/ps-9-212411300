@@ -16,6 +16,7 @@ X_scaled_df = pd.DataFrame(X_scaled, columns=X.columns)
 print(X_scaled_df.head())
 
 from sklearn.model_selection import train_test_split
+
 X_train, X_val, y_train, y_val = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 
 print(f"Training set size: {X_train.shape[0]} samples")
